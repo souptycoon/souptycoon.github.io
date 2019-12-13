@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+ table {
+    margin-left:auto; 
+    margin-right:auto;
+	border-spacing: 0.4rem; 
+
+  }
+
+
+
+body {
+	color: white; 
+	text-align: center;
+	 background-image: white;
+}
+
+.navigation {
+  color: white;
+  font-family: helvetica;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 3px;
+  margin-bottom: 4px;
+  max-width: 700px;
+  min-width: 700px;
+  position: relative;
+}
+
+.contact {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.contact th{
+	padding: 15px;
+}
+
+
+.description {
+	text-align: left;
+	font-family: helvetica;
+	color: black;
+	font-size: 16px;
+	padding: 40px;
+	
+}
+
+
+
+.selection-1 {
+	background-color: #2F4F4F;
+	border-color: #2F4F4F;
+	color: white;
+	width: 150px;
+	padding-left: 10px;
+	padding-right: 10px;
+	/*border-left: 1px solid white;
+	border-right: 1px solid white;*/
+	border-radius: 20px;
+	text-align: center;
+}
+
+.selection {
+	background: DarkCyan;
+	color: white;
+	width: 150px;;
+	padding-left: 10px;
+	padding-right: 10px;
+	/*border-left: 1px solid white;
+	border-right: 1px solid white;*/
+	border-radius: 20px;
+	text-align: center;
+	
+}
+
+
+.selection:hover {
+  background-color: #2F4F4F;
+  border-color: #2F4F4F;
+  transition: .5s ease;
+}
+
+.logo {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	max-width: 250px;
+	min-width: 250px;
+	margin-left:auto; 
+    margin-right:auto;
+	border-spacing: 0.4rem; 
+}
+
+.gallery {
+	margin-left:auto; 
+    margin-right:auto;
+	position: relative;
+	margin-top: 5px;
+	min-width: 100px;
+}
+
+.gallery-2 {
+	margin-left:auto; 
+    margin-right:auto;
+	position: relative;
+	margin-top: 5px;
+	min-width: 100px;
+	padding-left: 200px;
+}
+
+.center-cropped {
+  margin-top: 0px;
+  min-width: 100px;
+  height: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  /*border: 2px solid white;*/
+  position: relative;
+  /*width: 100%;*/
+  max-width: 400px;
+}
+
+
+
+/* Set the image to fill its parent and make transparent */
+.center-cropped img {
+  min-height: 70%;
+  min-width: 70%;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 5-7 */
+  filter: alpha(opacity=0);
+  /* modern browsers */
+  opacity: 0;
+}
+
+
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+  font-family: helvetica;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.center-cropped:hover .overlay {
+  opacity: 1;
+}
+
+.banner {
+	margin-bottom: 50px;
+	opacity: 1;
+	width: 400px;
+	height: 200px;
+	margin-left:auto; 
+    margin-right:auto;
+	border-spacing: 0.4rem; 
+	
+}
+
+.banner:hover{
+	
+	transition: .5s ease;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0.5;
+}
+
+.description-2 {
+	font-family: helvetica;
+	color: black;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+.description-3 {
+	font-family: helvetica;
+	color: black;
+	text-align: right;
+	font-size: 16px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	color: DarkCyan;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 350px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+   /* Black */
+  overflow-x: ; /* Disable horizontal scroll */
+  padding-top: 675px;
+
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 0px 20px 3px 60px;
+  text-decoration: none;
+  font-size: 23px;
+  font-family: helvetica;
+  color: Black;
+  display: block;
+  text-align: right;
+}
+
+.sidenav a:hover {
+	background: #2F4F4F;
+	color: White;
+	transition: .5s ease;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.footer {
+	font-family: helvetica;
+	color: black;
+	font-size: 15px;
+	margin: 50px;
+}
+
+.bio {
+	font-family: helvetica;
+	font-size: 16 px;
+	text-align: left;
+}
+
+.arrow a{
+	padding-left: 50px;
+	padding-right: 50px;
+	font-weight: bold;
+	font-size: 50px;
+	
+}
+
